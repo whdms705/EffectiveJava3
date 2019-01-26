@@ -8,8 +8,24 @@ public class Client15 {
         ex01.change("test01");
 
         Example01.VALUES[1]="test02";
-        System.out.println("clinet");
+        System.out.println("clinet  example01");
         for(String s : Example01.VALUES){
+
+            System.out.println(s);
+        }
+
+        //"Example02"을 확인 한 경우
+        //java.lang.UnsupportedOperationException 에러 발생
+        System.out.println("clinet  example02");
+        for(String s : Example02.VALUES){
+
+            System.out.println(s);
+        }
+
+        Example02.VALUES.add("d");
+
+
+        for(String s : Example02.VALUES){
 
             System.out.println(s);
         }
