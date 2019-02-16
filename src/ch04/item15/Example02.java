@@ -5,10 +5,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class Example02 {
-    private static final String[] PRIVATE_VALUES = {"a","b","c"};;
+    private static  String[] PRIVATE_VALUES = {"a","b","c"};
 
     //unmodifiableList 이란
     //https://docs.oracle.com/javase/7/docs/api/java/util/Collections.html
-    public static final List<String> VALUES =
-            Collections.unmodifiableList(Arrays.asList(PRIVATE_VALUES));
+    public static  List<String> VALUES = Arrays.asList(PRIVATE_VALUES);
+            //Collections.unmodifiableList(Arrays.asList(PRIVATE_VALUES));
+
 }
