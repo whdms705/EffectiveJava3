@@ -4,7 +4,6 @@ import java.util.*;
 
 public class LoTest {
 
-
     public static void main(String[] args) {
         List<String> strings = new ArrayList<>();
         unsafeAdd(strings,Integer.valueOf(24));
