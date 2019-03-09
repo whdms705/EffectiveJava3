@@ -1,6 +1,5 @@
 package ch04.item23;
 
-import sun.jvm.hotspot.utilities.AssertionFailure;
 
 class Figure {
     enum Shape{RECTANCE,CIRCLE};
@@ -23,16 +22,5 @@ class Figure {
         this.width = width;
     }
 
-    double area(){
-        switch (shape){
-            case RECTANCE:
-                return length*width;
-            case CIRCLE:
-                return Math.PI*(radius*radius);
-                default:
-                    throw new AssertionFailure("");
-        }
-
-    }
 
 }
